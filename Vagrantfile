@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "precise64"
-  [ { 'host1' => 
+  [ { 'devstack' => 
         { 'memory' => 512,
           # can't use ip .1, beacuase the ip is reservced for the v-net
           'ip' => '172.20.0.2',
@@ -18,8 +18,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
            ' 
         }
     } ,
-    { 'host2' => 
-        { 'memory' => 512,
+    { 'nova' => 
+        { 'memory' => 2048,
           'ip' => '172.20.0.3',
           'script' => '
            echo "called from $(hostname)"
