@@ -21,6 +21,7 @@ Provision all or by vm name
 
 ## Executing Log
 
+```
    vagrant up
    Bringing machine 'host1' up with 'virtualbox' provider...
    Bringing machine 'host2' up with 'virtualbox' provider...
@@ -91,5 +92,5 @@ Provision all or by vm name
    Begin excuting the provsion script for host2
    called from mylab-host2
    End excuting the provsion script for host2
-
+```
 
